@@ -9,9 +9,8 @@ namespace CodeTest
     {
         private static void Main(string[] args)
         {
-            // Run on sample.bin located in the CodeTest project folder in the test_data subfolder.
-            var projectFolder = new DirectoryInfo(Environment.CurrentDirectory).Parent.Parent.Parent.FullName;
-            var testFilePath = new DirectoryInfo(Path.Combine(projectFolder, "test_data/sample.bin")).FullName;
+            // Run on sample.bin in the test_data subfolder. This sample is always copied to the bin folder.
+            const string testFilePath = "test_data/sample.bin";
 
             using (var mmFile = MemoryMappedFile.CreateFromFile(testFilePath, FileMode.Open))
             using (var accessor = mmFile.CreateViewAccessor())

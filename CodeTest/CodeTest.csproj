@@ -9,4 +9,10 @@
     <ProjectReference Include="..\VbFileSearcher\VbFileSearcher.vbproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="test_data\sample.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
