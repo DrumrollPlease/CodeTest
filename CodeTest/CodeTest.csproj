@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FileSearcherProject\FileSearcherProject.csproj" />
     <ProjectReference Include="..\VbFileSearcher\VbFileSearcher.vbproj" />
   </ItemGroup>
 
